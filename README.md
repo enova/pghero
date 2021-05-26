@@ -33,7 +33,7 @@ A big thanks to [Craig Kerstiens](http://www.craigkerstiens.com/2013/01/10/more-
 
 ## History
 
-View the [changelog](https://github.com/ankane/pghero/blob/master/CHANGELOG.md)
+View the [changelog](https://github.com/enova/pghero/blob/master/CHANGELOG.md)
 
 ## Contributing
 
