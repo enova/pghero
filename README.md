@@ -1,6 +1,6 @@
 # PgHero
 
-A performance dashboard for Postgres
+A performance dashboard for Postgres. Forked from [PgHero](https://github.com/ankane/pghero)
 
 [See it in action](https://pghero.dokkuapp.com/)
 
@@ -8,7 +8,7 @@ A performance dashboard for Postgres
 
 :tangerine: Battle-tested at [Instacart](https://www.instacart.com/opensource)
 
-[![Build Status](https://github.com/ankane/pghero/workflows/build/badge.svg?branch=master)](https://github.com/ankane/pghero/actions) [![Docker Pulls](https://img.shields.io/docker/pulls/ankane/pghero)](https://hub.docker.com/repository/docker/ankane/pghero)
+[![Build Status](https://github.com/enova/pghero/workflows/build/badge.svg?branch=master)](https://github.com/ankane/pghero/actions) [![Docker Pulls](https://img.shields.io/docker/pulls/ankane/pghero)](https://hub.docker.com/repository/docker/ankane/pghero)
 
 ## Documentation
 
@@ -33,7 +33,7 @@ A big thanks to [Craig Kerstiens](http://www.craigkerstiens.com/2013/01/10/more-
 
 ## History
 
-View the [changelog](https://github.com/ankane/pghero/blob/master/CHANGELOG.md)
+View the [changelog](https://github.com/enova/pghero/blob/master/CHANGELOG.md)
 
 ## Contributing
 
