@@ -112,7 +112,7 @@ module PgHero
           databases = {}
 
           if !ENV["PGHERO_DATABASE_URL"] && spec_supported?
-            ActiveRecord::Base.configurations.configs_for(env_name: env, include_replicas: true).each do |db|
+            ActiveRecord::Base.configurations.configs_for(env_name: env, include_replicas_key => true).each do |db|
               databases[db.send(spec_name_key)] = {"spec" => db.send(spec_name_key)}
             end
           end
@@ -217,10 +217,16 @@ module PgHero
     end
 
     # private
-    # Rails 6.1 deprecate `spec_name` and use `name` for configurations
+    # Rails 6.1 deprecates `spec_name` for `name`
     # https://github.com/rails/rails/pull/38536
     def spec_name_key
       ActiveRecord::VERSION::STRING.to_f >= 6.1 ? :name : :spec_name
+    end
+
+    # private
+    # Rails 7.0 deprecates `include_replicas` for `include_hidden`
+    def include_replicas_key
+      ActiveRecord::VERSION::MAJOR >= 7 ? :include_hidden : :include_replicas
     end
 
     private
